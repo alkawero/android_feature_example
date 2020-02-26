@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/left_guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_layout_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnLinearOnClick"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/button_layout_linear"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_layout_constraint"
+        app:layout_constraintEnd_toStartOf="@+id/btn_layout_constraint"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_layout_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnRelativeOnClick"
+        android:text="@string/button_layout_Relative"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_layout_constraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_layout_constraint" />
+
+    <Button
+        android:id="@+id/btn_layout_constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="btnConstraintOnClick"
+        android:text="@string/button_layout_constraint"
+        app:layout_constraintEnd_toStartOf="@+id/btn_layout_relative"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_layout_linear"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
