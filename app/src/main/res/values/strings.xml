@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">AndroidFeatures</string>
-    <string name="button_layout_linear">Linear</string>
-    <string name="button_layout_Relative">Relative</string>
-    <string name="button_layout_constraint">Constraint</string>
+    <string name="bottom_ui">UI</string>
+    <string name="bottom_core">core</string>
+    <string name="bottom_third_party">3rd party</string>
+    <string name="btn_action_bar">Action Bar</string>
 </resources>
